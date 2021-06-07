@@ -1,33 +1,34 @@
-
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <style>
-            #app {
-                opacity: 0;
-                transition: all 250ms;
-            }
-        </style>
-        {{ craft.vite.script("/src/js/app.ts") }}
-    </head>
-    <body>
-        <div id="app">
-            {% block content %}
-                No Block Content Defined
-            {% endblock %}
-        </div>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<style>
+			#app {
+				opacity: 0;
+				transition: all 250ms;
+			}
+		</style>
+		{{ craft.vite.script("/src/js/app.ts") }}
+	</head>
+	<body>
+		<div id="app">
+			{% block content %}
+				No Block Content Defined
+			{% endblock %}
+		</div>
 
-        <script>
-            // Fall back for long page load
-            function fallBack () {
-                setTimeout(function () {
-                    var app = document.getElementById('app');
-                    if (app) { app.style.opacity='1.0'; }
-                }, 2500);
-            }
-            fallBack();
-        </script>
-    </body>
+		<script>
+			// Fall back for long page load
+function fallBack() {
+setTimeout(function () {
+var app = document.getElementById('app');
+if (app) {
+app.style.opacity = '1.0';
+}
+}, 2500);
+}
+fallBack();
+		</script>
+	</body>
 </html>

@@ -1,0 +1,19 @@
+contentColumnType: text
+fieldGroup: bb1f620f-c649-4d3e-aef1-390f3f8f48c8 # Common
+handle: contentBuilder
+instructions: ''
+name: 'Content Builder'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  vizyConfig: ''
+translationKeyFormat: null
+translationMethod: none
+type: verbb\vizy\fields\VizyField

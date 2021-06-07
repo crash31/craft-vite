@@ -1,12 +1,15 @@
 {
   "src/js/app-legacy.ts": {
-    "file": "assets/app-legacy.4e948ece.js",
+    "file": "assets/app-legacy.5a089c1f.js",
     "src": "src/js/app-legacy.ts",
     "isEntry": true
   },
   "src/js/app.ts": {
-    "file": "assets/app.9189fa42.js",
+    "file": "assets/app.e01700ca.js",
     "src": "src/js/app.ts",
-    "isEntry": true
+    "isEntry": true,
+    "css": [
+      "assets/app.072cadfb.css"
+    ]
   }
 }

@@ -19,7 +19,7 @@ export default ({ command }) => ({
     }),
     ViteRestart({
       reload: [
-          './templates/**/*',
+        './templates/**/*',
       ],
     }),
   ],

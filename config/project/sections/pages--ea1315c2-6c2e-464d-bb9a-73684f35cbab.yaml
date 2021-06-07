@@ -1,0 +1,14 @@
+enableVersioning: true
+handle: pages
+name: Pages
+propagationMethod: all
+siteSettings:
+  d516bcb9-a47c-42b3-8003-0b9ae3cfdd69: # Vite Test
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_entry
+    uriFormat: '{parent.slug}/{slug}'
+structure:
+  maxLevels: null
+  uid: ee7db8ea-1b51-4ba8-9013-2570bf260cd5
+type: structure
