@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/local/Cellar/node@12/12.22.1/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/opt/php@7.4/bin:/usr/local/opt/node@12/bin:/usr/local/opt/node@12/bin:/usr/local/sbin:/Users/kyler/.composer/vendor/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/php@7.4/bin:/usr/local/opt/node@12/bin:/usr/local/sbin:/Users/kyler/.composer/vendor/bin:/Users/kyler/.composer/vendor/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.22.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/kyler/Documents/Valet/craft-vite/package.json: Unexpected token } in JSON at position 602
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "craft-vite",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "private": true,
+    "devDependencies": {
+      "@vitejs/plugin-legacy": "^1.4.1",
+      "autoprefixer": "^10.2.6",
+      "postcss": "^8.3.0",
+      "tailwindcss": "^2.1.4",
+      "vite": "^2.3.6",
+      "vite-plugin-restart": "^0.0.2"
+    },
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build"
+    },
+    "dependencies": {
+      "@tailwindcss/aspect-ratio": "^0.2.1",
+      "@tailwindcss/forms": "^0.3.3",
+      "@tailwindcss/jit": "^0.1.18",
+      "@tailwindcss/line-clamp": "^0.2.1",
+      "@tailwindcss/typography": "^0.4.1",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
