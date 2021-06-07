@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: en-US
+name: 'Vite Test'
+primary: true
+siteGroup: a3ffdd06-6dcd-4ae1-86c2-3dc31312c70a # Vite Test
+sortOrder: 1

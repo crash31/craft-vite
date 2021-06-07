@@ -1,0 +1,19 @@
+{
+  "name": "craft-vite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^1.4.1",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.4",
+    "vite": "^2.3.6",
+    "vite-plugin-restart": "^0.0.2"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  }
+}
