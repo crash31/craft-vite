@@ -1,18 +1,30 @@
 import '/src/css/app.pcss';
-import HelloWorld from '@/vue/HelloWorld.vue'
-import Test from '@/vue/Test.vue'
-import {createApp} from 'vue'
+import { createApp } from 'vue/dist/vue.esm-bundler';
+import { defineAsyncComponent } from 'vue';
+import SkeletonError from '../vue/SkeletonError.vue';
+import SkeletonLoading from '../vue/SkeletonLoading.vue';
 
 const main = async() => {
   // Create vue instances
-  const hello = createApp(HelloWorld).mount('#helloWorld')
-  const test = createApp(Test).mount('#test')
+  const app = createApp({
+    name: 'App',
+    components: {
+      HelloWorld: defineAsyncComponent({
+        loader: () => import('../vue/HelloWorld.vue'),
+        delay: 200,
+        timeout: 3000,
+        errorComponent: SkeletonError,
+        loadingComponent: SkeletonLoading,
+      }),
+      Test: defineAsyncComponent(() => import('../vue/Test.vue')),
+    }
+  })
   // Mount the app
-  return {hello, test}
+  app.mount('#app')
 }
 
 // Execute async function
-main().then( ({hello, test}) => {
+main().then( (value) => {
   window.onload = () => {
     const app = document.getElementById('app')
     if (app) { app.style.opacity = '1.0' }

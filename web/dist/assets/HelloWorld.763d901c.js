@@ -1,0 +1,1 @@
+import{o as e,c as n,a as r}from"./vendor.3e190622.js";const o={name:"helloWorld"},t=r("p",{class:"font-bold tracking-wide text-center text-green-700"}," Hello, World! Vue is running! Lorem ipsum. ",-1);o.render=function(r,o,l,s,a,d){return e(),n("div",null,[t])};export default o;

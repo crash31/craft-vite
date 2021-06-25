@@ -1,15 +1,36 @@
 {
-  "src/js/app-legacy.ts": {
-    "file": "assets/app-legacy.5a089c1f.js",
-    "src": "src/js/app-legacy.ts",
-    "isEntry": true
-  },
   "src/js/app.ts": {
-    "file": "assets/app.e01700ca.js",
+    "file": "assets/app.6017c14b.js",
     "src": "src/js/app.ts",
     "isEntry": true,
+    "imports": [
+      "_vendor.3e190622.js"
+    ],
+    "dynamicImports": [
+      "src/vue/HelloWorld.vue",
+      "src/vue/Test.vue"
+    ],
     "css": [
-      "assets/app.072cadfb.css"
+      "assets/app.fbb64bee.css"
+    ]
+  },
+  "_vendor.3e190622.js": {
+    "file": "assets/vendor.3e190622.js"
+  },
+  "src/vue/HelloWorld.vue": {
+    "file": "assets/HelloWorld.763d901c.js",
+    "src": "src/vue/HelloWorld.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.3e190622.js"
+    ]
+  },
+  "src/vue/Test.vue": {
+    "file": "assets/Test.a6526896.js",
+    "src": "src/vue/Test.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.3e190622.js"
     ]
   }
 }

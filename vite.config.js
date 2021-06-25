@@ -1,6 +1,6 @@
-import legacy from '@vitejs/plugin-legacy'
+// import legacy from '@vitejs/plugin-legacy';
 import ViteRestart from 'vite-plugin-restart';
-import vue from '@vitejs/plugin-vue'
+import vue from '@vitejs/plugin-vue';
 
 // https://vitejs.dev/config/
 export default ({ command }) => ({
@@ -11,13 +11,10 @@ export default ({ command }) => ({
     rollupOptions: {
       input: {
         app: '/src/js/app.ts',
-      }
+      },
     },
   },
   plugins: [
-    legacy({
-      targets: ['defaults', 'not IE 11']
-    }),
     ViteRestart({
       reload: [
         './templates/**/*',
