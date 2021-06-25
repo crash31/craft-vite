@@ -4,15 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "144b0503309264a266104c52b93fb518",
+    "content-hash": "a455e6362750f8e638604c99c43acf9a",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.183.13",
+            "version": "3.185.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aws/aws-sdk-php.git",
+                "reference": "953bbd1b5f7fd3f1601ad0a83f93358f635c57f4"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0e0be404854482b7cae61ef9f707c7a876b43cdf",
-                "reference": "0e0be404854482b7cae61ef9f707c7a876b43cdf",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/953bbd1b5f7fd3f1601ad0a83f93358f635c57f4",
+                "reference": "953bbd1b5f7fd3f1601ad0a83f93358f635c57f4",
                 "shasum": ""
             },
             "require": {
@@ -24,6 +29,22 @@
                 "guzzlehttp/psr7": "^1.7.0",
                 "mtdowling/jmespath.php": "^2.6",
                 "php": ">=5.5"
+            },
+            "require-dev": {
+                "andrewsville/php-token-reflection": "^1.4",
+                "aws/aws-php-sns-message-validator": "~1.0",
+                "behat/behat": "~3.0",
+                "doctrine/cache": "~1.4",
+                "ext-dom": "*",
+                "ext-openssl": "*",
+                "ext-pcntl": "*",
+                "ext-sockets": "*",
+                "nette/neon": "^2.3",
+                "paragonie/random_compat": ">= 2",
+                "phpunit/phpunit": "^4.8.35|^5.4.3",
+                "psr/cache": "^1.0",
+                "psr/simple-cache": "^1.0",
+                "sebastian/comparator": "^1.2.3"
             },
             "suggest": {
                 "aws/aws-php-sns-message-validator": "To validate incoming SNS notifications",
@@ -46,6 +67,7 @@
                     "src/functions.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
@@ -67,7 +89,12 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2021-06-04T18:12:54+00:00"
+            "support": {
+                "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
+                "issues": "https://github.com/aws/aws-sdk-php/issues",
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.185.1"
+            },
+            "time": "2021-06-24T18:22:42+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -120,11 +147,11 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.9",
+            "version": "1.2.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/78a0e288fdcebf92aa2318a8d3656168da6ac1a5",
-                "reference": "78a0e288fdcebf92aa2318a8d3656168da6ac1a5",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/9fdb22c2e97a614657716178093cd1da90a64aa8",
+                "reference": "9fdb22c2e97a614657716178093cd1da90a64aa8",
                 "shasum": ""
             },
             "require": {
@@ -161,7 +188,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2021-01-12T12:10:35+00:00"
+            "time": "2021-06-07T13:58:28+00:00"
         },
         {
             "name": "composer/composer",
@@ -412,11 +439,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.6.16",
+            "version": "3.6.17",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/e393adc8419f39c2047b211289eb813b5e1869b3",
-                "reference": "e393adc8419f39c2047b211289eb813b5e1869b3",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/4497db8b89474a68fc43ee1d7f8b78beff9dc6f2",
+                "reference": "4497db8b89474a68fc43ee1d7f8b78beff9dc6f2",
                 "shasum": ""
             },
             "require": {
@@ -479,6 +506,12 @@
             "license": [
                 "proprietary"
             ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
             "description": "Craft CMS",
             "homepage": "https://craftcms.com",
             "keywords": [
@@ -494,7 +527,7 @@
                 "docs": "https://craftcms.com/docs/3.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2021-06-01T18:14:34+00:00"
+            "time": "2021-06-15T15:59:20+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -575,6 +608,11 @@
         {
             "name": "craftcms/redactor",
             "version": "2.8.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/redactor.git",
+                "reference": "dd70560df56ec7aef87fe52115fa571d13468714"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/craftcms/redactor/zipball/dd70560df56ec7aef87fe52115fa571d13468714",
@@ -595,6 +633,7 @@
                     "craft\\redactor\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -606,18 +645,18 @@
             ],
             "description": "Edit rich text content in Craft CMS using Redactor by Imperavi.",
             "keywords": [
+                "Redactor",
                 "cms",
                 "craftcms",
                 "html",
-                "redactor",
                 "yii2"
             ],
             "support": {
+                "docs": "https://github.com/craftcms/redactor/blob/v2/README.md",
                 "email": "support@craftcms.com",
                 "issues": "https://github.com/craftcms/redactor/issues?state=open",
-                "source": "https://github.com/craftcms/redactor",
-                "docs": "https://github.com/craftcms/redactor/blob/v2/README.md",
-                "rss": "https://github.com/craftcms/redactor/commits/v2.atom"
+                "rss": "https://github.com/craftcms/redactor/commits/v2.atom",
+                "source": "https://github.com/craftcms/redactor"
             },
             "time": "2021-05-01T18:13:34+00:00"
         },
@@ -652,6 +691,11 @@
         {
             "name": "craftsnippets/craft-image-toolbox",
             "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craft-snippets/Craft-image-toolbox.git",
+                "reference": "84af71336e01b6a439b778a3a7fca8d058908514"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/craft-snippets/Craft-image-toolbox/zipball/84af71336e01b6a439b778a3a7fca8d058908514",
@@ -679,6 +723,7 @@
                     "craftsnippets\\imagetoolbox\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -690,15 +735,16 @@
             ],
             "description": "Image toolbox",
             "keywords": [
+                "Craft",
                 "cms",
-                "craft",
                 "craft-plugin",
                 "craftcms",
                 "image toolbox"
             ],
             "support": {
                 "docs": "http://craftsnippets.com/docs/image-toolbox/",
-                "issues": "https://github.com/craft-snippets/Craft-image-toolbox/issues"
+                "issues": "https://github.com/craft-snippets/Craft-image-toolbox/issues",
+                "source": "https://github.com/craft-snippets/Craft-image-toolbox/tree/1.1.1"
             },
             "time": "2021-03-11T21:44:59+00:00"
         },
@@ -1424,11 +1470,11 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/9be3b16c877d477357c015cec057548cf9b2a14a",
-                "reference": "9be3b16c877d477357c015cec057548cf9b2a14a",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f3ad69181b8afed2c9edf7be5a2918144ff4ea32",
+                "reference": "f3ad69181b8afed2c9edf7be5a2918144ff4ea32",
                 "shasum": ""
             },
             "require": {
@@ -1440,7 +1486,6 @@
                 "league/flysystem-sftp": "<1.0.6"
             },
             "suggest": {
-                "ext-fileinfo": "Required for MimeType",
                 "ext-ftp": "Allows you to use FTP server storage",
                 "ext-openssl": "Allows you to use FTPS server storage",
                 "league/flysystem-aws-s3-v2": "Allows you to use S3 storage with AWS SDK v2",
@@ -1495,11 +1540,16 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2020-08-23T07:39:11+00:00"
+            "time": "2021-06-23T21:56:05+00:00"
         },
         {
             "name": "league/flysystem-aws-s3-v3",
             "version": "1.0.29",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem-aws-s3-v3.git",
+                "reference": "4e25cc0582a36a786c31115e419c6e40498f6972"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/4e25cc0582a36a786c31115e419c6e40498f6972",
@@ -1510,6 +1560,10 @@
                 "aws/aws-sdk-php": "^3.20.0",
                 "league/flysystem": "^1.0.40",
                 "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "henrikbjorn/phpspec-code-coverage": "~1.0.1",
+                "phpspec/phpspec": "^2.0.0"
             },
             "type": "library",
             "extra": {
@@ -1522,6 +1576,7 @@
                     "League\\Flysystem\\AwsS3v3\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1532,6 +1587,10 @@
                 }
             ],
             "description": "Flysystem adapter for the AWS S3 SDK v3.x",
+            "support": {
+                "issues": "https://github.com/thephpleague/flysystem-aws-s3-v3/issues",
+                "source": "https://github.com/thephpleague/flysystem-aws-s3-v3/tree/1.0.29"
+            },
             "time": "2020-10-08T18:58:37+00:00"
         },
         {
@@ -1655,6 +1714,11 @@
         {
             "name": "mmikkel/cp-field-inspect",
             "version": "1.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mmikkel/CpFieldInspect-Craft.git",
+                "reference": "14a717338cf5f019a4d37f086f0123e07970ebe0"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/mmikkel/CpFieldInspect-Craft/zipball/14a717338cf5f019a4d37f086f0123e07970ebe0",
@@ -1679,6 +1743,7 @@
                     "mmikkel\\cpfieldinspect\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1690,30 +1755,40 @@
             ],
             "description": "Inspect field handles and easily edit field and element source settings",
             "keywords": [
+                "Craft",
                 "cms",
                 "cp field inspect",
-                "craft",
                 "craft-plugin",
                 "craftcms"
             ],
             "support": {
                 "docs": "https://github.com/mmikkel/CpFieldInspect-Craft/blob/master/README.md",
-                "issues": "https://github.com/mmikkel/CpFieldInspect-Craft/issues"
+                "issues": "https://github.com/mmikkel/CpFieldInspect-Craft/issues",
+                "source": "https://github.com/mmikkel/CpFieldInspect-Craft/tree/1.2.5"
             },
             "time": "2021-05-17T19:58:15+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
-            "version": "2.6.0",
+            "version": "2.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jmespath/jmespath.php.git",
+                "reference": "9b87907a81b87bc76d19a7fb2d61e61486ee9edb"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/42dae2cbd13154083ca6d70099692fef8ca84bfb",
-                "reference": "42dae2cbd13154083ca6d70099692fef8ca84bfb",
+                "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/9b87907a81b87bc76d19a7fb2d61e61486ee9edb",
+                "reference": "9b87907a81b87bc76d19a7fb2d61e61486ee9edb",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.4 || ^7.0 || ^8.0",
                 "symfony/polyfill-mbstring": "^1.17"
+            },
+            "require-dev": {
+                "composer/xdebug-handler": "^1.4 || ^2.0",
+                "phpunit/phpunit": "^4.8.36 || ^7.5.15"
             },
             "bin": [
                 "bin/jp.php"
@@ -1732,6 +1807,7 @@
                     "src/JmesPath.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1747,7 +1823,11 @@
                 "json",
                 "jsonpath"
             ],
-            "time": "2020-07-31T21:01:56+00:00"
+            "support": {
+                "issues": "https://github.com/jmespath/jmespath.php/issues",
+                "source": "https://github.com/jmespath/jmespath.php/tree/2.6.1"
+            },
+            "time": "2021-06-14T00:11:39+00:00"
         },
         {
             "name": "nystudio107/craft-plugin-manifest",
@@ -1791,6 +1871,11 @@
         {
             "name": "nystudio107/craft-plugin-vite",
             "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-plugin-vite.git",
+                "reference": "36925c3846f9e42a2e69d507c2fb4261851a12b5"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/36925c3846f9e42a2e69d507c2fb4261851a12b5",
@@ -1806,6 +1891,7 @@
                     "nystudio107\\pluginvite\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1823,17 +1909,18 @@
             ],
             "support": {
                 "docs": "https://github.com/nystudio107/craft-plugin-vite/blob/v1/README.md",
-                "issues": "https://github.com/nystudio107/craft-plugin-vite/issues"
+                "issues": "https://github.com/nystudio107/craft-plugin-vite/issues",
+                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/1.0.6"
             },
             "time": "2021-05-21T20:21:34+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.42",
+            "version": "3.3.43",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/cec9a386468f79983ad52ba075c2dacc5988ccfd",
-                "reference": "cec9a386468f79983ad52ba075c2dacc5988ccfd",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/c74c121a557ffb1b284cf3f73285920dfda28c10",
+                "reference": "c74c121a557ffb1b284cf3f73285920dfda28c10",
                 "shasum": ""
             },
             "require": {
@@ -1883,11 +1970,16 @@
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support"
             },
-            "time": "2021-05-18T17:08:22+00:00"
+            "time": "2021-06-08T17:10:11+00:00"
         },
         {
             "name": "nystudio107/craft-vite",
             "version": "1.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-vite.git",
+                "reference": "d95c133b345ae8fe8aa3cbea82f4ccef8fa4127e"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/d95c133b345ae8fe8aa3cbea82f4ccef8fa4127e",
@@ -1913,6 +2005,7 @@
                     "nystudio107\\vite\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1924,15 +2017,16 @@
             ],
             "description": "Allows the use of the Vite.js next generation frontend tooling with Craft CMS",
             "keywords": [
+                "Craft",
                 "cms",
-                "craft",
                 "craft-plugin",
                 "craftcms",
                 "vite"
             ],
             "support": {
                 "docs": "https://github.com/nystudio107/craft-vite/blob/master/README.md",
-                "issues": "https://github.com/nystudio107/craft-vite/issues"
+                "issues": "https://github.com/nystudio107/craft-vite/issues",
+                "source": "https://github.com/nystudio107/craft-vite/tree/1.0.9"
             },
             "time": "2021-06-06T02:27:53+00:00"
         },
@@ -2259,11 +2353,11 @@
         },
         {
             "name": "pixelandtonic/imagine",
-            "version": "1.2.4.1",
+            "version": "1.2.4.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pixelandtonic/Imagine/zipball/2bedcf2dfab50a22126498a16241944c9d4cde65",
-                "reference": "2bedcf2dfab50a22126498a16241944c9d4cde65",
+                "url": "https://api.github.com/repos/pixelandtonic/Imagine/zipball/5ee4b6a365497818815ba50738c8dcbb555c9fd3",
+                "reference": "5ee4b6a365497818815ba50738c8dcbb555c9fd3",
                 "shasum": ""
             },
             "require": {
@@ -2303,7 +2397,7 @@
                 "image manipulation",
                 "image processing"
             ],
-            "time": "2020-11-05T18:36:18+00:00"
+            "time": "2021-06-22T18:26:46+00:00"
         },
         {
             "name": "psr/container",
@@ -2541,6 +2635,11 @@
         {
             "name": "sebastianlenz/linkfield",
             "version": "1.0.25",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastian-lenz/craft-linkfield.git",
+                "reference": "a29f328fe41248e9b1722c52f68e435f53c241d3"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/a29f328fe41248e9b1722c52f68e435f53c241d3",
@@ -2550,6 +2649,9 @@
             "require": {
                 "craftcms/cms": "^3.0.0-RC1",
                 "php": "^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5 || ^8.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -2563,10 +2665,15 @@
                     "typedlinkfield\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "A Craft field type for selecting links",
+            "support": {
+                "issues": "https://github.com/sebastian-lenz/craft-linkfield/issues",
+                "source": "https://github.com/sebastian-lenz/craft-linkfield/tree/1.0.25"
+            },
             "time": "2021-02-23T20:55:03+00:00"
         },
         {
@@ -2784,11 +2891,11 @@
         },
         {
             "name": "symfony/console",
-            "version": "v5.3.0",
+            "version": "v5.3.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/058553870f7809087fa80fa734704a21b9bcaeb2",
-                "reference": "058553870f7809087fa80fa734704a21b9bcaeb2",
+                "url": "https://api.github.com/repos/symfony/console/zipball/649730483885ff2ca99ca0560ef0e5f6b03f2ac1",
+                "reference": "649730483885ff2ca99ca0560ef0e5f6b03f2ac1",
                 "shasum": ""
             },
             "require": {
@@ -2846,7 +2953,7 @@
                 "console",
                 "terminal"
             ],
-            "time": "2021-05-26T17:43:10+00:00"
+            "time": "2021-06-12T09:42:48+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -3493,11 +3600,11 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.3.0",
+            "version": "v5.3.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/53e36cb1c160505cdaf1ef201501669c4c317191",
-                "reference": "53e36cb1c160505cdaf1ef201501669c4c317191",
+                "url": "https://api.github.com/repos/symfony/process/zipball/714b47f9196de61a196d86c4bad5f09201b307df",
+                "reference": "714b47f9196de61a196d86c4bad5f09201b307df",
                 "shasum": ""
             },
             "require": {
@@ -3528,7 +3635,7 @@
             ],
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
-            "time": "2021-05-26T12:52:38+00:00"
+            "time": "2021-06-12T10:15:01+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -3588,11 +3695,11 @@
         },
         {
             "name": "symfony/string",
-            "version": "v5.3.0",
+            "version": "v5.3.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/a9a0f8b6aafc5d2d1c116dcccd1573a95153515b",
-                "reference": "a9a0f8b6aafc5d2d1c116dcccd1573a95153515b",
+                "url": "https://api.github.com/repos/symfony/string/zipball/0732e97e41c0a590f77e231afc16a327375d50b0",
+                "reference": "0732e97e41c0a590f77e231afc16a327375d50b0",
                 "shasum": ""
             },
             "require": {
@@ -3638,15 +3745,15 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2021-05-26T17:43:10+00:00"
+            "time": "2021-06-06T09:51:56+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v5.3.0",
+            "version": "v5.3.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/3bbcf262fceb3d8f48175302e6ba0ac96e3a5a11",
-                "reference": "3bbcf262fceb3d8f48175302e6ba0ac96e3a5a11",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/71719ab2409401711d619765aa255f9d352a59b2",
+                "reference": "71719ab2409401711d619765aa255f9d352a59b2",
                 "shasum": ""
             },
             "require": {
@@ -3687,7 +3794,7 @@
             ],
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
-            "time": "2021-05-26T17:43:10+00:00"
+            "time": "2021-06-06T09:51:56+00:00"
         },
         {
             "name": "true/punycode",
@@ -3783,6 +3890,11 @@
         {
             "name": "vaersaagod/dospaces",
             "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vaersaagod/dospaces.git",
+                "reference": "7f16553db44a7df127233f843467c6e70fa9655c"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/vaersaagod/dospaces/zipball/7f16553db44a7df127233f843467c6e70fa9655c",
@@ -3805,6 +3917,7 @@
                     "vaersaagod\\dospaces\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3816,25 +3929,30 @@
             ],
             "description": "DigitalOcean Spaces integration for Craft CMS",
             "keywords": [
+                "Flysystem",
                 "aws",
                 "cms",
                 "craftcms",
                 "digitalocean",
-                "flysystem",
                 "spaces",
                 "yii2"
             ],
             "support": {
-                "issues": "https://github.com/vaersaagod/dospaces/issues?state=open",
-                "source": "https://github.com/vaersaagod/dospaces",
                 "docs": "https://github.com/vaersaagod/dospaces",
-                "rss": "https://github.com/vaersaagod/dospaces/commits/master.atom"
+                "issues": "https://github.com/vaersaagod/dospaces/issues?state=open",
+                "rss": "https://github.com/vaersaagod/dospaces/commits/master.atom",
+                "source": "https://github.com/vaersaagod/dospaces"
             },
             "time": "2020-08-24T13:21:40+00:00"
         },
         {
             "name": "verbb/base",
             "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/verbb/verbb-base.git",
+                "reference": "006cc4979e2b7669234a90bb7347129fe0185eb8"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/verbb/verbb-base/zipball/006cc4979e2b7669234a90bb7347129fe0185eb8",
@@ -3850,6 +3968,7 @@
                     "verbb\\base\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3860,15 +3979,27 @@
                 }
             ],
             "description": "Common utilities and building-blocks for Verbb plugins for Craft CMS.",
+            "support": {
+                "docs": "https://github.com/verbb/verbb-base",
+                "email": "support@verbb.io",
+                "issues": "https://github.com/verbb/verbb-base/issues?state=open",
+                "rss": "https://github.com/verbb/verbb-base/commits/v2.atom",
+                "source": "https://github.com/verbb/verbb-base"
+            },
             "time": "2021-03-17T20:54:49+00:00"
         },
         {
             "name": "verbb/vizy",
-            "version": "1.0.2",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/verbb/vizy.git",
+                "reference": "dc68f50efad565a53c5c205f484b2d793d559812"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/vizy/zipball/afb37e4aa474cf493472b9d59ac2c2086cdff52d",
-                "reference": "afb37e4aa474cf493472b9d59ac2c2086cdff52d",
+                "url": "https://api.github.com/repos/verbb/vizy/zipball/dc68f50efad565a53c5c205f484b2d793d559812",
+                "reference": "dc68f50efad565a53c5c205f484b2d793d559812",
                 "shasum": ""
             },
             "require": {
@@ -3888,6 +4019,7 @@
                     "verbb\\vizy\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -3899,8 +4031,8 @@
             ],
             "description": "A flexible visual editor field for Craft CMS.",
             "keywords": [
+                "Craft",
                 "cms",
-                "craft",
                 "craft-plugin",
                 "craftcms",
                 "prosemirror",
@@ -3908,13 +4040,13 @@
                 "vizy"
             ],
             "support": {
+                "docs": "https://github.com/verbb/vizy",
                 "email": "support@verbb.io",
                 "issues": "https://github.com/verbb/vizy/issues?state=open",
-                "source": "https://github.com/verbb/vizy",
-                "docs": "https://github.com/verbb/vizy",
-                "rss": "https://github.com/verbb/vizy/commits/v2.atom"
+                "rss": "https://github.com/verbb/vizy/commits/v2.atom",
+                "source": "https://github.com/verbb/vizy"
             },
-            "time": "2021-05-30T05:08:29+00:00"
+            "time": "2021-06-22T08:01:32+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -4043,11 +4175,11 @@
         },
         {
             "name": "voku/arrayy",
-            "version": "7.8.9",
+            "version": "7.8.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/Arrayy/zipball/d26e7d59ac2f6eb891b77c48bfdb9fe1e76afa60",
-                "reference": "d26e7d59ac2f6eb891b77c48bfdb9fe1e76afa60",
+                "url": "https://api.github.com/repos/voku/Arrayy/zipball/d9b0b1b398f1b19c3c8d72386f5df3764b877052",
+                "reference": "d9b0b1b398f1b19c3c8d72386f5df3764b877052",
                 "shasum": ""
             },
             "require": {
@@ -4086,7 +4218,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2021-03-29T13:31:10+00:00"
+            "time": "2021-06-18T23:23:37+00:00"
         },
         {
             "name": "voku/email-check",
@@ -4467,6 +4599,11 @@
         {
             "name": "yii2mod/yii2-array-query",
             "version": "1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii2mod/yii2-array-query.git",
+                "reference": "646eee9dd473330a23d0d1d3669143c76465b535"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/yii2mod/yii2-array-query/zipball/646eee9dd473330a23d0d1d3669143c76465b535",
@@ -4477,12 +4614,17 @@
                 "php": ">=7.0.0",
                 "yiisoft/yii2": "*"
             },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2.0",
+                "phpunit/phpunit": "~6.0"
+            },
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
                     "yii2mod\\query\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4498,6 +4640,10 @@
                 "yii2 array query",
                 "yii2 array search"
             ],
+            "support": {
+                "issues": "https://github.com/yii2mod/yii2-array-query/issues",
+                "source": "https://github.com/yii2mod/yii2-array-query/tree/1.4"
+            },
             "time": "2019-08-26T20:03:51+00:00"
         },
         {
@@ -4988,16 +5134,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v5.3.0",
+            "version": "v5.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "1d3953e627fe4b5f6df503f356b6545ada6351f3"
+                "reference": "905a22c68b292ffb6f20d7636c36b220d1fba5ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/1d3953e627fe4b5f6df503f356b6545ada6351f3",
-                "reference": "1d3953e627fe4b5f6df503f356b6545ada6351f3",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/905a22c68b292ffb6f20d7636c36b220d1fba5ae",
+                "reference": "905a22c68b292ffb6f20d7636c36b220d1fba5ae",
                 "shasum": ""
             },
             "require": {
@@ -5056,7 +5202,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v5.3.0"
+                "source": "https://github.com/symfony/var-dumper/tree/v5.3.2"
             },
             "funding": [
                 {
@@ -5072,7 +5218,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-27T12:28:50+00:00"
+            "time": "2021-06-06T09:51:56+00:00"
         },
         {
             "name": "yiisoft/yii2-shell",
