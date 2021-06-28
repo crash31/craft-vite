@@ -1,4 +1,5 @@
 import '/src/css/app.pcss';
+import './utils/lazysizes-wrapper';
 import { createApp } from 'vue/dist/vue.esm-bundler';
 import { defineAsyncComponent } from 'vue';
 import SkeletonError from '../vue/SkeletonError.vue';
