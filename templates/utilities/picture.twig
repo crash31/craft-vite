@@ -1,0 +1,79 @@
+{% set asset = asset ?? null %}
+{% set width = width ?? null %}
+{% set height = height ?? null %}
+{% set sizes = sizes ?? null %}
+{% set alt = alt ?? (asset ? asset.title : null) %}
+{% set mode = mode ?? 'crop' %}
+{% set position = position ?? 'center-center' %}
+{% set class = class ?? '' %}
+{% set id = id ?? '' %}
+{% set quality = quality ?? '85' %}
+
+{% if asset %}
+	{% if asset.extension == 'svg' %}
+
+		{# Handle SVG assets #}
+		<span class="svg-wrap inline-block {{ class|length ? class : 'w-full h-auto' }}">{{ svg(asset) }}</span>
+
+	{% else %}
+
+		{# General Image Handling #}
+		{% set class = class|length > 0 ? class ~ ' lazyload' : class ~ 'lazyload' %}
+
+		{% set imgInfo = {
+      mode: mode,
+      width: width,
+      height: height,
+      quality: quality,
+      position: position
+    } %}
+
+		{% if craft.app.images.supportsWebP %}
+			{% set imgInfoWebP = {
+        mode: mode,
+        width: width,
+        height: height,
+        quality: quality,
+        position: position,
+        format: 'webp'
+      } %}
+		{% endif %}
+
+		<picture>
+			{% if craft.app.images.supportsWebP %}
+
+				<source type="image/webp" data-srcset="{{ asset.getUrl(imgInfoWebP) }}" media="1x">
+
+			{% endif %}
+
+			{% if sizes|length > 0 %}
+
+				{% do asset.setTransform(imgInfo) %}
+
+				{% set srcsetArr = asset.getSrcset(sizes)|split(', ') %}
+
+				{% set sizeIndex = 0 %}
+				{% for srcset in srcsetArr %}
+					{% set srcset = srcset|replace(' ' ~ sizes[sizeIndex], '') %}
+					<source type="image/{{ asset.extension }}" data-srcset="{{ srcset }}" media="{{ sizes[sizeIndex] }}">
+					{% set sizeIndex = sizeIndex + 1 %}
+				{% endfor %}
+
+				{# Use srcset #}
+				<img {% if id|length %} id="{{ id }}" {% endif %} data-src="{{ asset.getUrl(imgInfo) }}" width="{{ asset.getWidth(imgInfo) }}" height="{{ asset.getHeight(imgInfo) }}" alt="{{ alt }}" class="{{ class }}" loading="lazy"/>
+
+			{% else %}
+
+				<source
+				type="image/{{ asset.extension }}" data-srcset="{{ asset.getUrl(imgInfo) }}" media="1x">
+
+				{# Use Standard img element #}
+				<img {% if id|length %} id="{{ id }}" {% endif %} data-src="{{ asset.getUrl(imgInfo) }}" width="{{ asset.getWidth(imgInfo) }}" height="{{ asset.getHeight(imgInfo) }}" alt="{{ alt }}" class="{{ class }}" loading="lazy"/>
+
+			{% endif %}
+
+		</picture>
+
+
+	{% endif %}
+{% endif %}
