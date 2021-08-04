@@ -1,5 +1,5 @@
 fieldLayouts:
-  4a9fdbca-a543-41d3-8b75-b1233da4ea7c:
+  53121395-d71a-49bb-9c13-c27a3c69f49e:
     tabs:
       -
         elements:
@@ -23,25 +23,25 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
-            warning: null
-            width: 100
-          -
-            fieldUid: 344500cb-21c6-47b1-b805-72a38f1e2478 # Single Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: craft\fieldlayoutelements\AssetTitleField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
-handle: home
-hasTitleField: false
-name: Home
-section: 01ebb5b7-8a7e-417a-b3b2-8ad8b07a3f87 # Home
+handle: general
+hasUrls: true
+name: General
+settings:
+  bucket: $DO_BUCKET
+  contentDisposition: ''
+  endpoint: $DO_ENDPOINT
+  expires: '1 months'
+  keyId: $DO_ACCESS_KEY_ID
+  region: $DO_REGION
+  secret: $DO_SECRET_ACCESS_KEY
+  subfolder: craft-vite/general
 sortOrder: 1
-titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: null
+type: vaersaagod\dospaces\Volume
+url: $DO_BASE_URL

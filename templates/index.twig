@@ -2,12 +2,42 @@
 
 {% block content %}
 
-	<section class="flex items-center justify-center w-screen h-screen m-0">
+	<section class="flex items-center flex-col justify-center w-screen h-screen m-0">
 		<div class="max-w-2xl p-8">
 			<h1 class="mb-6 text-4xl text-center">Hello, world!</h1>
 			<hello-world></hello-world>
 			<p class="mb-6 text-center">Thank you for using our starter kit! If you are seeing this message, you were able to get everything up and running!</p>
 			<test></test>
+		</div>
+
+		{# Testing Image Rendering #}
+		<div class="max-w-5xl p-8">
+			{% if entry.singleImage|length %}
+				<div class="flex">
+					<div class="image-wrap py-8 px-4">
+						<p>utilities/picture</p>
+						{% include "utilities/picture" with {
+							asset: entry.singleImage.one,
+							width: 800,
+							height: 600,
+							mode: 'fit',
+							class: 'max-w-full h-auto',
+							sizes: ['1x', '1.5x', '2x'],
+						} %}
+					</div>
+					<div class="image-wrap py-8 px-4">
+						<p>utilities/img</p>
+						{% include "utilities/img" with {
+							asset: entry.singleImage.one,
+							width: 800,
+							height: 600,
+							mode: 'fit',
+							class: 'max-w-full h-auto',
+							sizes: ['1x', '1.5x', '2x'],
+						} %}
+					</div>
+				</div>
+			{% endif %}
 		</div>
 	</section>
 

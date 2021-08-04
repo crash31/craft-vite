@@ -1,4 +1,4 @@
-dateModified: 1628107837
+dateModified: 1628109871
 email:
   fromEmail: developer@gotobig.com
   fromName: 'Vite Test'
@@ -6,14 +6,19 @@ email:
 meta:
   __names__:
     01ebb5b7-8a7e-417a-b3b2-8ad8b07a3f87: Home # Home
+    5e0f8bf0-e013-4ad2-9679-e34c5a64d762: Builder # Builder
     663abdd9-fd46-4848-a217-272ab483ff55: Headline # Headline
+    1159ef0b-1522-4f29-81cf-6f5ad147092b: 'Image List' # Image List
+    344500cb-21c6-47b1-b805-72a38f1e2478: 'Single Image' # Single Image
     4073702d-fe60-4b6b-b426-cd618abf0ae1: Callout # Callout
+    71251131-bd97-4b05-b9bf-baffa4d952e9: 'Repeated Content' # Repeated Content
     83445777-3970-47ad-82ff-849404f0a438: Pages # Pages
     a3ffdd06-6dcd-4ae1-86c2-3dc31312c70a: 'Vite Test' # Vite Test
+    a85f2bb3-ff58-49a1-99a1-9e88cb12737f: General # General
     bb1f620f-c649-4d3e-aef1-390f3f8f48c8: Common # Common
     c8007ab4-70bb-4ac1-a8b1-3699ba8880ae: Home # Home
-    ce8fb790-f17a-4edd-a05f-fdbb7d1dbe39: 'Content Builder' # Content Builder
     d516bcb9-a47c-42b3-8003-0b9ae3cfdd69: 'Vite Test' # Vite Test
+    e3dba398-e51b-4b6c-b9d7-fb2f76388902: Assets # Assets
     e7f679ff-e7c6-41e0-85ad-9334959194bf: Textarea # Textarea
     ea1315c2-6c2e-464d-bb9a-73684f35cbab: Pages # Pages
 plugins:
@@ -22,6 +27,10 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
   dospaces:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  embeddedassets:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
@@ -52,7 +61,7 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'Vite Test'
   schemaVersion: 3.7.7
