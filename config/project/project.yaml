@@ -1,8 +1,21 @@
-dateModified: 1624639737
+dateModified: 1628107837
 email:
   fromEmail: developer@gotobig.com
   fromName: 'Vite Test'
   transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    01ebb5b7-8a7e-417a-b3b2-8ad8b07a3f87: Home # Home
+    663abdd9-fd46-4848-a217-272ab483ff55: Headline # Headline
+    4073702d-fe60-4b6b-b426-cd618abf0ae1: Callout # Callout
+    83445777-3970-47ad-82ff-849404f0a438: Pages # Pages
+    a3ffdd06-6dcd-4ae1-86c2-3dc31312c70a: 'Vite Test' # Vite Test
+    bb1f620f-c649-4d3e-aef1-390f3f8f48c8: Common # Common
+    c8007ab4-70bb-4ac1-a8b1-3699ba8880ae: Home # Home
+    ce8fb790-f17a-4edd-a05f-fdbb7d1dbe39: 'Content Builder' # Content Builder
+    d516bcb9-a47c-42b3-8003-0b9ae3cfdd69: 'Vite Test' # Vite Test
+    e7f679ff-e7c6-41e0-85ad-9334959194bf: Textarea # Textarea
+    ea1315c2-6c2e-464d-bb9a-73684f35cbab: Pages # Pages
 plugins:
   cp-field-inspect:
     edition: standard
@@ -16,6 +29,11 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  neo:
+    edition: standard
+    enabled: true
+    licenseKey: FPQACGNIPT4RBIZGWCHKOHQ8
+    schemaVersion: 2.9.11
   redactor:
     edition: standard
     enabled: true
@@ -33,16 +51,11 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  vizy:
-    edition: standard
-    enabled: true
-    licenseKey: 66XM81EXW7SG081VUWU47HI5
-    schemaVersion: 0.9.0
 system:
   edition: solo
   live: true
   name: 'Vite Test'
-  schemaVersion: 3.6.8
+  schemaVersion: 3.7.7
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
