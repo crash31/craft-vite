@@ -18,6 +18,7 @@ const main = async() => {
         loadingComponent: SkeletonLoading,
       }),
       Test: defineAsyncComponent(() => import('../vue/Test.vue')),
+      Modal: defineAsyncComponent(() => import('../vue/Modal.vue'))
     }
   })
   // Mount the app

@@ -1,4 +1,4 @@
-dateModified: 1628109871
+dateModified: 1631108946
 email:
   fromEmail: developer@gotobig.com
   fromName: 'Vite Test'
@@ -42,7 +42,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: FPQACGNIPT4RBIZGWCHKOHQ8
-    schemaVersion: 2.9.11
+    schemaVersion: 2.11.6
   redactor:
     edition: standard
     enabled: true
@@ -51,7 +51,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: RRXQ7IXS4SZ6050UYEF65YAB
-    schemaVersion: 3.0.10
+    schemaVersion: 3.0.11
   typedlinkfield:
     edition: standard
     enabled: true
@@ -64,7 +64,7 @@ system:
   edition: pro
   live: true
   name: 'Vite Test'
-  schemaVersion: 3.7.7
+  schemaVersion: 3.7.8
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
