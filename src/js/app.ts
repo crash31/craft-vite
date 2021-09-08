@@ -2,6 +2,7 @@ import '/src/css/app.pcss';
 import 'lazysizes';
 import { createApp } from 'vue/dist/vue.esm-bundler';
 import { defineAsyncComponent } from 'vue';
+import VueClickAway from 'vue3-click-away';
 import SkeletonError from '../vue/SkeletonError.vue';
 import SkeletonLoading from '../vue/SkeletonLoading.vue';
 
@@ -18,9 +19,13 @@ const main = async() => {
         loadingComponent: SkeletonLoading,
       }),
       Test: defineAsyncComponent(() => import('../vue/Test.vue')),
-      Modal: defineAsyncComponent(() => import('../vue/Modal.vue'))
+      Modal: defineAsyncComponent(() => import('../vue/Modal.vue')),
+      Accordion: defineAsyncComponent(() => import('../vue/Accordion.vue'))
     }
   })
+
+  app.use(VueClickAway)
+
   // Mount the app
   app.mount('#app')
 }

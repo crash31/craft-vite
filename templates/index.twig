@@ -49,9 +49,26 @@
 				<div class="relative my-8 lg:my-12">
 					<h3 class="text-2xl border-b">Modals</h3>
 					<div class="relative">
-						<div>
-							<Modal></Modal>
+						<div class="my-6">
+							<Modal button-class="px-4 py-1 border-blue-500 border-2 rounded text-blue-500"></Modal>
 						</div>
+						<div class="my-6">
+							<Modal>
+								<template v-slot:trigger>
+									<button class="px-4 py-1 border-blue-500 border-2 rounded text-blue-500">This is a modal button.</button>
+								</template>
+								<template v-slot:content>
+									New content.
+								</template>
+							</Modal>
+						</div>
+					</div>
+				</div>
+
+				<div class="relative my-8 lg:my-12">
+					<h3 class="text-2xl border-b">Accordion Sample</h3>
+					<div class="my-6">
+						<Accordion :list="[{ headline: 'Header 1', content: 'Content 1', }, { headline: 'Header 2', content: 'Content 2',}, { foo: 'Header 3', bar: 'Content 3', } ]"/>
 					</div>
 				</div>
 			</div>
