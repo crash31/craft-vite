@@ -26,7 +26,7 @@ export default ({ command }) => ({
     VitePWA({
       registerType: 'autoUpdate',
       mode: 'development',
-      base: '/',
+      base: '/dist/',
       includeAssets: ['favicon.svg'],
       workbox: {
         cleanupOutdatedCaches: false,
@@ -39,17 +39,17 @@ export default ({ command }) => ({
         start_url: '/',
         icons: [
           {
-            src: 'big-logo-192x192.png',
+            src: '../big-logo-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: 'big-logo-512x512.png',
+            src: '../big-logo-512x512.png',
             sizes: '512x512',
             type: 'image/png',
           },
           {
-            src: 'big-logo-512x512.png',
+            src: '../big-logo-512x512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable',
