@@ -24,13 +24,19 @@ export default ({ command }) => ({
     }),
     vue(),
     VitePWA({
+      registerType: 'autoUpdate',
       mode: 'development',
       base: '/dist/',
       includeAssets: ['favicon.svg'],
+      workbox: {
+        cleanupOutdatedCaches: false,
+        sourcemap: true,
+      },
       manifest: {
         name: 'Craft Vite Inject Manifest',
         short_name: 'Craft Vite',
         theme_color: '#ffffff',
+        start_url: '/',
         icons: [
           {
             src: '../big-logo-192x192.png',
