@@ -6,6 +6,19 @@ import VueClickAway from 'vue3-click-away';
 import SkeletonError from '../vue/SkeletonError.vue';
 import SkeletonLoading from '../vue/SkeletonLoading.vue';
 
+if ('serviceWorker' in navigator) {
+  window
+    .addEventListener('load', () => {
+      navigator
+        .serviceWorker
+        .register('/sw.js')
+        .catch((registrationError) => {
+          console
+            .log('SW registration failed: ', registrationError)
+        })
+    })
+}
+
 const main = async() => {
   // Create vue instances
   const app = createApp({

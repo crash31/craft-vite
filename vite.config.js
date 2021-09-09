@@ -27,7 +27,6 @@ export default ({ command }) => ({
       mode: 'development',
       base: '/',
       includeAssets: ['favicon.svg'],
-      injectRegister: 'networkfirst',
       manifest: {
         name: 'Craft Vite Inject Manifest',
         short_name: 'Craft Vite',
