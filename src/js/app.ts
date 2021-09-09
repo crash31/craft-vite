@@ -11,7 +11,7 @@ if ('serviceWorker' in navigator) {
     .addEventListener('load', () => {
       navigator
         .serviceWorker
-        .register('/sw.js')
+        .register('/dist/sw.js')
         .catch((registrationError) => {
           console
             .log('SW registration failed: ', registrationError)

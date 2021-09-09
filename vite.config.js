@@ -25,7 +25,7 @@ export default ({ command }) => ({
     vue(),
     VitePWA({
       mode: 'development',
-      base: '/',
+      base: '/dist',
       includeAssets: ['favicon.svg'],
       manifest: {
         name: 'Craft Vite Inject Manifest',

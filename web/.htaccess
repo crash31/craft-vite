@@ -8,33 +8,19 @@
     RewriteRule (.+) index.php?p=$1 [QSA,L]
 </IfModule>
 
-<IfModule mod_mime.c>
-    # Manifest file
-    AddType application/manifest+json webmanifest
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 year"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType application/javascript "access 1 year"
+ExpiresByType application/x-javascript "access 1 year"
+ExpiresByType application/x-shockwave-flash "access 1 year"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 2 days"
 </IfModule>
-
-# your https configuration
-Include conf/extra/https-craft-vite.dev.simpleissimple.com.conf
-
-<IfModule ssl_module>
-    SSLRandomSeed startup builtin
-    SSLRandomSeed connect builtin
-</IfModule>
-
-<VirtualHost craft-vite.dev.simpleissimple.com:80>
-    ServerName craft-vite.dev.simpleissimple.com
-    
-    RewriteEngine On
-    
-    # disable TRACE and TRACK methods
-    RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
-    RewriteRule .* - [F]
-    
-    Options +FollowSymlinks
-    RewriteCond %{SERVER_PORT} !443
-    
-    RewriteRule (.*) https://craft-vite.dev.simpleissimple.com/ [L,R]
-    
-    ErrorLog logs/craft-vite.dev.simpleissimple.com-error_log
-    CustomLog logs/craft-vite.dev.simpleissimple.com-access_log combined
-</VirtualHost>
+## EXPIRES CACHING ##
