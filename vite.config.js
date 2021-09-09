@@ -28,7 +28,6 @@ export default ({ command }) => ({
       filename: 'sw.ts',
       base: '/',
       strategies: 'injectManifest',
-      includeAssets: [],
       manifest: {
         name: 'Craft Vite Inject Manifest',
         short_name: 'Craft Vite',
