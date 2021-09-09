@@ -71,6 +71,25 @@
 						<Accordion :list="[{ headline: 'Header 1', content: 'Content 1', }, { headline: 'Header 2', content: 'Content 2',}, { foo: 'Header 3', bar: 'Content 3', } ]"/>
 					</div>
 				</div>
+
+				<div class="relative my-8 lg:my-12">
+					<h3 class="text-2xl border-b">Tooltip Sample</h3>
+					<div class="my-6">
+						<div class="prose">
+							<p>This text has a
+								<Tooltip message="This is a message on top." position="top">tooltip</tooltip>
+								on top.</p>
+							<p>This text has a
+								<Tooltip message="This is a message to the right." position="right">tooltip</tooltip>
+								to the right.</p>
+							<p>This text has a
+								<Tooltip message="This is a message on the bottom." position="bottom">tooltip</tooltip>below it.</p>
+							<p>This text has a
+								<Tooltip message="This is a message to the left." position="left">tooltip</tooltip>
+								to the left.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

@@ -20,7 +20,8 @@ const main = async() => {
       }),
       Test: defineAsyncComponent(() => import('../vue/Test.vue')),
       Modal: defineAsyncComponent(() => import('../vue/Modal.vue')),
-      Accordion: defineAsyncComponent(() => import('../vue/Accordion.vue'))
+      Accordion: defineAsyncComponent(() => import('../vue/Accordion.vue')),
+      Tooltip: defineAsyncComponent(() => import('../vue/Tooltip.vue')),
     }
   })
 
