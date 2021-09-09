@@ -25,7 +25,7 @@ export default ({ command }) => ({
     vue(),
     VitePWA({
       mode: 'development',
-      base: '/dist',
+      base: '/dist/',
       includeAssets: ['favicon.svg'],
       manifest: {
         name: 'Craft Vite Inject Manifest',
@@ -33,17 +33,17 @@ export default ({ command }) => ({
         theme_color: '#ffffff',
         icons: [
           {
-            src: 'big-logo-192x192.png',
+            src: '../big-logo-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: 'big-logo-512x512.png',
+            src: '../big-logo-512x512.png',
             sizes: '512x512',
             type: 'image/png',
           },
           {
-            src: 'big-logo-512x512.png',
+            src: '../big-logo-512x512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable',
