@@ -1,7 +1,7 @@
 <template>
 	<span
 		ref="trigger"
-		class="tooltip"
+		class="tooltip after:bg-gray-600 after:bg-opacity-80"
 		:class="`${
 			position == 'top' ||
 			position == 'right' ||
@@ -39,7 +39,7 @@
 			);
 			this.$refs.trigger.style.setProperty(
 				"--tooltip-width",
-				`${this.message.length}ch`
+				`${this.message.length - 2}ch`
 			);
 		},
 		methods: {
@@ -62,42 +62,48 @@
 
 	.tooltip::after {
 		content: var(--tooltip-message);
+		pointer-events: none;
 		position: absolute;
 		max-width: 200px;
 		width: var(--tooltip-width);
 		border-radius: theme("borderRadius.DEFAULT");
-		background-color: theme("colors.gray.500");
 		color: theme("colors.white");
-		padding: theme("spacing.1") theme("spacing.2");
+		padding: theme("spacing.2") theme("spacing.3");
 		font-size: theme("fontSize.sm");
-		line-height: 1.05;
-		text-align: center;
+		line-height: 1.1;
+		backdrop-filter: blur(2px);
 		opacity: 0;
 		transition: all 200ms;
+		z-index: theme("zIndex.30");
 	}
 
 	.tooltip:hover::after {
 		opacity: 1;
+		margin: 0 !important;
 	}
 
 	.tooltip.top::after {
 		bottom: calc(100% + theme("spacing.1"));
 		left: 50%;
 		transform: translateX(-50%);
+		margin-bottom: -5px;
 	}
 	.tooltip.bottom::after {
 		top: calc(100% + theme("spacing.1"));
 		left: 50%;
 		transform: translateX(-50%);
+		margin-top: -5px;
 	}
 	.tooltip.left::after {
 		top: 50%;
-		right: calc(100% + theme("spacing.2"));
+		right: calc(100% + theme("spacing.1"));
 		transform: translateY(-50%);
+		margin-right: -5px;
 	}
 	.tooltip.right::after {
 		top: 50%;
-		left: calc(100% + theme("spacing.2"));
+		left: calc(100% + theme("spacing.1"));
 		transform: translateY(-50%);
+		margin-left: -5px;
 	}
 </style>
