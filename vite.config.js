@@ -26,7 +26,7 @@ export default ({ command }) => ({
     VitePWA({
       registerType: 'autoUpdate',
       mode: 'development',
-      base: '/dist/',
+      base: '/',
       includeAssets: ['favicon.svg'],
       workbox: {
         cleanupOutdatedCaches: false,
@@ -36,19 +36,20 @@ export default ({ command }) => ({
         name: 'Craft Vite Inject Manifest',
         short_name: 'Craft Vite',
         theme_color: '#ffffff',
+        start_url: '/',
         icons: [
           {
-            src: '../big-logo-192x192.png',
+            src: 'big-logo-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: '../big-logo-512x512.png',
+            src: 'big-logo-512x512.png',
             sizes: '512x512',
             type: 'image/png',
           },
           {
-            src: '../big-logo-512x512.png',
+            src: 'big-logo-512x512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable',
