@@ -1,0 +1,1 @@
+import{o as e,c as t,a as n}from"./vendor.1db58565.js";const r={name:"test"},s=[n("p",{class:"font-bold tracking-wide text-center text-green-700"},"Test",-1)];r.render=function(n,r,a,o,d,c){return e(),t("div",null,s)};export{r as default};

@@ -1,1 +1,0 @@
-import{o as e,c as t,a as n}from"./vendor.3e190622.js";const r={name:"test"},o=n("p",{class:"font-bold tracking-wide text-center text-green-700"},"Test",-1);r.render=function(n,r,s,a,c,d){return e(),t("div",null,[o])};export default r;
