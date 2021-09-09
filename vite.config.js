@@ -36,7 +36,7 @@ export default ({ command }) => ({
         name: 'Craft Vite Inject Manifest',
         short_name: 'Craft Vite',
         theme_color: '#ffffff',
-        start_url: '/',
+        start_url: '/index.php',
         icons: [
           {
             src: '../big-logo-192x192.png',
