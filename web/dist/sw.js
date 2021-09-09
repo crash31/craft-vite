@@ -110,8 +110,8 @@ define("./sw.js",['./workbox-63bc7d34'], function (workbox) { 'use strict';
     "url": "assets/Accordion.54723d4a.js",
     "revision": "c647ccb6134ed6c80c4604697fef3a02"
   }, {
-    "url": "assets/app.9ccb5590.js",
-    "revision": "0e0f3bf0be803c0fe79537654cb79f64"
+    "url": "assets/app.b86d2ea9.js",
+    "revision": "484383f441404c26d8a3289f3c126829"
   }, {
     "url": "assets/app.bbeb208c.css",
     "revision": "38c339b5f23f13527b6732295072581f"
@@ -131,8 +131,11 @@ define("./sw.js",['./workbox-63bc7d34'], function (workbox) { 'use strict';
     "url": "assets/vendor.1db58565.js",
     "revision": "4403c5c26f6816592956bdb31d93b02f"
   }, {
+    "url": "registerSW.js",
+    "revision": "61c618857d1a7d89ca3beb97dba8a787"
+  }, {
     "url": "manifest.webmanifest",
-    "revision": "d8ae304bd21267f4f574f5c3940cfecc"
+    "revision": "9e878fe7a95aae317901feb8bb7a59ad"
   }], {});
   workbox.cleanupOutdatedCaches();
   workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("index.html")));
