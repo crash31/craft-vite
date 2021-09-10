@@ -1,0 +1,8 @@
+{# Breadcrumb Structure #}
+{% if entry.level > 1 %}
+	<ul class="breadcrumbs">
+		{% for crumb in entry.getAncestors() %}
+			<li class="inline-block pr-4">{{ crumb.getLink() }}</li>
+		{% endfor %}
+	</ul>
+{% endif %}

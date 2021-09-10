@@ -39,7 +39,7 @@
 			);
 			this.$refs.trigger.style.setProperty(
 				"--tooltip-width",
-				`${this.message.length - 2}ch`
+				`${this.message.length - 4}ch`
 			);
 		},
 		methods: {
@@ -64,7 +64,7 @@
 		content: var(--tooltip-message);
 		pointer-events: none;
 		position: absolute;
-		max-width: 200px;
+		max-width: 300px;
 		width: var(--tooltip-width);
 		border-radius: theme("borderRadius.DEFAULT");
 		color: theme("colors.white");

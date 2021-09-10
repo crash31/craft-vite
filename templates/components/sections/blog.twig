@@ -1,0 +1,99 @@
+{# Blog List Section #}
+{% set posts = posts ?? craft.entries.section('posts') %}
+{% set posts = limit ? posts.limit(limit) : posts.limit(6) %}
+{% set currentUri = craft.app.request.getSegment(2) %}
+
+<div class="mb-8 blog-list-wrap">
+
+	{% paginate posts as pageInfo, pageEntries %}
+
+		{% if posts|length %}
+			{% for item in pageEntries %}
+				<div
+					class="py-6 border-b border-gray-300 lg:py-8">
+
+					{# Post Entry #}
+					<div class="mb-4">
+						<h3 class="mb-2 text-2xl lg:text-3xl">
+							<a href="{{ post.url }}" class="post-headline-link">{{ post.title|raw }}</a>
+						</h3>
+						<p class="text-sm tracking-wide text-gray-500">Posted on
+							{{ post.postData|date("M d, Y") }}
+							by
+							{{ post.author }}
+							{% if post.postCategories|length %}
+								{% for category in post.postCategories.all %}
+									-
+									<a href="{{ category.url }}" class="post-category">{{ category.title }}</a>
+								{% endfor %}
+							{% endif %}
+						</p>
+					</div>
+
+				</div>
+			{% endfor %}
+
+			{# Pagination #}
+			{% if pageInfo.totalPages > 1 %}
+				<p
+					class="text-sm text-gray-500 pagination-wrap">
+					{# Previous Button #}
+					{% if pageInfo.prevUrl %}
+						<a href="{{ pageInfo.prevUrl }}" class="inline-block mr-3">
+							<svg width="24" height="24" fill="none" viewbox="0 0 24 24">
+								<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.25 6.75L4.75 12L10.25 17.25"></path>
+								<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 12H5"></path>
+							</svg>
+						</a>
+					{% endif %}
+
+					{# First Button #}
+					{% if pageInfo.currentPage > 2 %}
+						<a class="relative inline-block p-2 mr-3 leading-none pagination-number" href="{{ pageInfo.firstUrl }}">{{ 1 }}</a>
+					{% endif %}
+
+					{# In between #}
+					{% if pageInfo.currentPage > 3 %}
+						<span class="p-2 mr-3 leading-none">...</span>
+					{% endif %}
+
+					{# Previous Buttons #}
+					{% for page, url in pageInfo.getPrevUrls(1) %}
+						<a class="relative inline-block p-2 mr-3 leading-none pagination-number" href='{{ url }}'>{{ page }}</a>
+					{% endfor %}
+
+					{# Current Page #}
+					<span class="relative inline-block p-2 mr-3 leading-none active-number">{{ pageInfo.currentPage }}</span>
+
+					{# Next Buttons #}
+					{% for page, url in pageInfo.getNextUrls(4) %}
+						<a class="relative inline-block p-2 mr-3 leading-none pagination-number" href='{{ url }}'>{{ page }}</a>
+					{% endfor %}
+
+					{# In between #}
+					{% if pageInfo.currentPage < pageInfo.totalPages-2 %}
+						<span class="p-2 mr-3 leading-none">...</span>
+					{% endif %}
+
+					{# Last Button #}
+					{% if pageInfo.currentPage < pageInfo.totalPages-1 %}
+						<a class="relative inline-block p-2 mr-3 leading-none pagination-number" href='{{ pageInfo.lastUrl }}'>{{ pageInfo.totalPages }}</a>
+					{% endif %}
+
+					{# Next Button #}
+					{% if pageInfo.nextUrl %}
+						<a class="inline-block mr-3" href="{{ pageInfo.nextUrl }}">
+							<svg width="24" height="24" fill="none" viewbox="0 0 24 24">
+								<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.75 6.75L19.25 12L13.75 17.25"></path>
+								<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 12H4.75"></path>
+							</svg>
+						</a>
+					{% endif %}
+				</p>
+			{% endif %}
+
+		{% else %}
+			<p class="text-lg text-gray-500">There are currently no posts available.</p>
+		{% endif %}
+
+	</div>
