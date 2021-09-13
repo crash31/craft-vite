@@ -12,6 +12,7 @@ export default ({ command }) => ({
     outDir: './web/dist/',
     rollupOptions: {
       input: {
+        lazy: '/src/js/utils/lazy.ts',
         app: '/src/js/app.ts',
       },
     },

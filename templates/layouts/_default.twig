@@ -11,12 +11,13 @@
 		</style>
 		<link rel="manifest" href="/dist/manifest.webmanifest">
 		<script src="/dist/registerSW.js"></script>
+		{{ craft.vite.script("/src/js/utils/lazy.ts") }}
 		{{ craft.vite.script("/src/js/app.ts") }}
 	</head>
 	<body>
-		{% include "components/global/headerNav" %}
 
 		<div id="app" class="duration-200">
+			{% include "components/global/headerNav" %}
 			{% block content %}
 				No Block Content Defined
 			{% endblock %}

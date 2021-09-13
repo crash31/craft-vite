@@ -1,5 +1,4 @@
 import '/src/css/app.pcss';
-import 'lazysizes';
 import * as Turbo from '@hotwired/turbo';
 import gsap from 'gsap';
 
