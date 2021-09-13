@@ -14,7 +14,9 @@
 		{{ craft.vite.script("/src/js/app.ts") }}
 	</head>
 	<body>
-		<div id="app">
+		{% include "components/global/headerNav" %}
+
+		<div id="app" class="duration-200">
 			{% block content %}
 				No Block Content Defined
 			{% endblock %}

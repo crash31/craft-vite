@@ -1,0 +1,22 @@
+{% set home = craft.entries.section('home').slug('home').one %}
+{% set pages = craft.entries.section('pages') %}
+
+<header>
+	<div class="container">
+		<div class="max-w-5xl mx-auto">
+			<div class="relative flex items-center justify-between">
+				<a href="{{ home.url }}">Home</a>
+
+				<ul class="nav">
+					{% for page in pages.all %}
+						{% if page.ancestors|length == 0 %}
+							<li class="inline-block">
+								<a href="{{ page.url }}" class="inline-block">{{ page.title }}</a>
+							</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>

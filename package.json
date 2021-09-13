@@ -22,6 +22,7 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@hotwired/turbo": "^7.0.0-rc.3",
     "@rollup/plugin-replace": "^3.0.0",
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/forms": "^0.3.3",

@@ -1,0 +1,17 @@
+{% extends 'layouts/_default' %}
+
+{% block content %}
+
+	<article class="relative">
+		<div class="container">
+			<div class="text-center py-8">
+				<h1 class="">{{ entry.title }}</h1>
+			</div>
+
+			<div class="prose mx-auto">
+				{{ entry.textarea }}
+			</div>
+		</div>
+	</article>
+
+{% endblock %}

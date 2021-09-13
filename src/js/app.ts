@@ -1,10 +1,15 @@
 import '/src/css/app.pcss';
 import 'lazysizes';
+import * as Turbo from '@hotwired/turbo';
+import gsap from 'gsap';
+
 import { createApp } from 'vue/dist/vue.esm-bundler';
 import { defineAsyncComponent } from 'vue';
 import VueClickAway from 'vue3-click-away';
 import SkeletonError from '../vue/SkeletonError.vue';
 import SkeletonLoading from '../vue/SkeletonLoading.vue';
+
+Turbo.start();
 
 const main = async() => {
   // Create vue instances
@@ -22,7 +27,24 @@ const main = async() => {
       Modal: defineAsyncComponent(() => import('../vue/Modal.vue')),
       Accordion: defineAsyncComponent(() => import('../vue/Accordion.vue')),
       Tooltip: defineAsyncComponent(() => import('../vue/Tooltip.vue')),
-    }
+    },
+    beforeMount() {
+      const app = document.getElementById('app')
+      // console.log('beforeMount');
+      if (app.parentNode) {
+        document.addEventListener('turbo:visit', () => this.$.appContext.app.unmount(), { once: true});
+        this.$originalEl = app.outerHTML;
+      }
+    },
+    mounted() {
+      const app = document.getElementById('app')
+      gsap.fromTo(app, { opacity: 0 }, { opacity: 1, duration: 0.3, ease: 'power2.out' });
+    },
+    destroyed() {
+      const app = document.getElementById('app')
+      console.log('destroyed');
+      app.outerHTML = this.$originalEl;
+    },
   })
 
   app.use(VueClickAway)
@@ -31,10 +53,11 @@ const main = async() => {
   app.mount('#app')
 }
 
-// Execute async function
-main().then( (value) => {
-  window.onload = () => {
-    const app = document.getElementById('app')
-    if (app) { app.style.opacity = '1.0' }
-  }
+document.addEventListener('turbo:load', () => {
+  // Execute async function
+  main().then( (value) => {
+    window.onload = () => {
+      if (app) { app.style.opacity = '1.0' }
+    }
+  })
 })

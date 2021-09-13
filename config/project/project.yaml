@@ -1,4 +1,4 @@
-dateModified: 1631108946
+dateModified: 1631537568
 email:
   fromEmail: developer@gotobig.com
   fromName: 'Vite Test'
@@ -12,7 +12,7 @@ meta:
     344500cb-21c6-47b1-b805-72a38f1e2478: 'Single Image' # Single Image
     4073702d-fe60-4b6b-b426-cd618abf0ae1: Callout # Callout
     71251131-bd97-4b05-b9bf-baffa4d952e9: 'Repeated Content' # Repeated Content
-    83445777-3970-47ad-82ff-849404f0a438: Pages # Pages
+    83445777-3970-47ad-82ff-849404f0a438: Default # Default
     a3ffdd06-6dcd-4ae1-86c2-3dc31312c70a: 'Vite Test' # Vite Test
     a85f2bb3-ff58-49a1-99a1-9e88cb12737f: General # General
     bb1f620f-c649-4d3e-aef1-390f3f8f48c8: Common # Common
