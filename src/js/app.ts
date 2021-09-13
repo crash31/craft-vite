@@ -37,7 +37,7 @@ const main = async() => {
     },
     mounted() {
       const app = document.getElementById('app')
-      gsap.fromTo(app, { opacity: 0 }, { opacity: 1, duration: 0.3, ease: 'power2.out' });
+      gsap.fromTo(app, { opacity: 0 }, { opacity: 1, duration: 0.2, ease: 'power2.out' });
     },
     destroyed() {
       const app = document.getElementById('app')
