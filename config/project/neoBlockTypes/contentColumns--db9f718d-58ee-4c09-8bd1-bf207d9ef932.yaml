@@ -1,0 +1,10 @@
+childBlocks:
+  - contentBlock
+field: df60cedc-a0c3-43b1-8e6d-2a0d438dd151 # Page Builder
+handle: contentColumns
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Content Columns'
+sortOrder: 5
+topLevel: true

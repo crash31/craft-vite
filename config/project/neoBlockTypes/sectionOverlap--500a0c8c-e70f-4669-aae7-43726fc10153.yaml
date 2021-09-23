@@ -1,0 +1,11 @@
+childBlocks:
+  - contentColumns
+  - textContent
+field: df60cedc-a0c3-43b1-8e6d-2a0d438dd151 # Page Builder
+handle: sectionOverlap
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Overlap
+sortOrder: 3
+topLevel: true

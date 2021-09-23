@@ -1,0 +1,9 @@
+<div
+	class="relative container">
+	{# <div class="block lg:grid grid-cols-12 gap-8{{ block.slimContainer ? ' max-w-6xl mx-auto' : '' }}"> #}
+	<div class="block lg:grid grid-cols-12 gap-8">
+		{% for child in block.children.all %}
+			{% include "components/blocks/" ~ child.type.handle with {block: child, index: loop.index} only %}
+		{% endfor %}
+	</div>
+</div>

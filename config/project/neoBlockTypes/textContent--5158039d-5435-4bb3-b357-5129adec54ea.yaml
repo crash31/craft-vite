@@ -1,0 +1,25 @@
+childBlocks: ''
+field: df60cedc-a0c3-43b1-8e6d-2a0d438dd151 # Page Builder
+fieldLayouts:
+  35b607c9-6677-4744-b8c5-60838643146d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e7f679ff-e7c6-41e0-85ad-9334959194bf # Textarea
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: textContent
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Text Content'
+sortOrder: 8
+topLevel: true

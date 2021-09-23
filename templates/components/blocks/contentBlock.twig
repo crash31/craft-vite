@@ -1,0 +1,7 @@
+{% set span = block.span ?? '12' %}
+
+<div class="relative block w-full mb-4 lg:mb-0" style="grid-column: span {{ span }} / span {{ span }}">
+	{% for child in block.children.all %}
+		{% include "components/blocks/" ~ child.type.handle with {block: child, index: loop.index} only %}
+	{% endfor %}
+</div>

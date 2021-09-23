@@ -1,0 +1,8 @@
+{% set entry = entry ?? null %}
+
+{% if entry %}
+	{# Setting a falsey type because qureies are buggy I guess #}
+	{% for block in entry.pageBuilder.level(1).type('not resetting_query').all() %}
+		{% include "components/blocks/" ~ block.type.handle with {block: block, index: loop.index} only %}
+	{% endfor %}
+{% endif %}

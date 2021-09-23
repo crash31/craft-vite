@@ -1,24 +1,34 @@
-dateModified: 1631537568
+dateModified: 1632429926
 email:
   fromEmail: developer@gotobig.com
   fromName: 'Vite Test'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    1c3daded-fb73-425d-b783-6b36c0890eef: Standard # Standard
     01ebb5b7-8a7e-417a-b3b2-8ad8b07a3f87: Home # Home
     5e0f8bf0-e013-4ad2-9679-e34c5a64d762: Builder # Builder
+    8d99434e-ca23-4a1d-ab99-a84fe4dbece6: Span # Span
+    10fb4a91-ae7e-4e7f-bd1e-c7f8462993fe: Sections # Sections
+    500a0c8c-e70f-4669-aae7-43726fc10153: Overlap # Overlap
     663abdd9-fd46-4848-a217-272ab483ff55: Headline # Headline
     1159ef0b-1522-4f29-81cf-6f5ad147092b: 'Image List' # Image List
+    4185a6ca-3349-4aa7-8a3f-b00ef0c483d9: Structures # Structures
     344500cb-21c6-47b1-b805-72a38f1e2478: 'Single Image' # Single Image
     4073702d-fe60-4b6b-b426-cd618abf0ae1: Callout # Callout
+    5158039d-5435-4bb3-b357-5129adec54ea: 'Text Content' # Text Content
     71251131-bd97-4b05-b9bf-baffa4d952e9: 'Repeated Content' # Repeated Content
     83445777-3970-47ad-82ff-849404f0a438: Default # Default
     a3ffdd06-6dcd-4ae1-86c2-3dc31312c70a: 'Vite Test' # Vite Test
     a85f2bb3-ff58-49a1-99a1-9e88cb12737f: General # General
     bb1f620f-c649-4d3e-aef1-390f3f8f48c8: Common # Common
+    c1ceeb48-0cac-46c3-93ca-b956ee90da5d: Elements # Elements
     c8007ab4-70bb-4ac1-a8b1-3699ba8880ae: Home # Home
     d516bcb9-a47c-42b3-8003-0b9ae3cfdd69: 'Vite Test' # Vite Test
+    db9f718d-58ee-4c09-8bd1-bf207d9ef932: 'Content Columns' # Content Columns
+    df60cedc-a0c3-43b1-8e6d-2a0d438dd151: 'Page Builder' # Page Builder
     e3dba398-e51b-4b6c-b9d7-fb2f76388902: Assets # Assets
+    e7a98d82-522e-44b5-9563-1a4f1a83fb08: 'Content Block' # Content Block
     e7f679ff-e7c6-41e0-85ad-9334959194bf: Textarea # Textarea
     ea1315c2-6c2e-464d-bb9a-73684f35cbab: Pages # Pages
 plugins:

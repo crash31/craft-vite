@@ -1,0 +1,11 @@
+<section
+	class="standard-section relative block">
+
+	{# Content Section #}
+	<div class="relative my-8 lg:my-12">
+		{% for child in block.children.all %}
+			{% include "components/blocks/" ~ child.type.handle with {block: child, index: loop.index} only %}
+		{% endfor %}
+	</div>
+
+</section>
