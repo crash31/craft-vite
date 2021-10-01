@@ -13,7 +13,7 @@
 	{% if asset.extension == 'svg' %}
 
 		{# Handle SVG assets #}
-		<span class="svg-wrap inline-block {{ class|length ? class : 'w-full h-auto' }}">{{ svg(asset) }}</span>
+		<span class="svg-wrap inline-block {{ class|length ? class : 'w-full h-auto' }}">{{ svg(asset)|attr({width: width ?? asset.getWidth, height: height ?? asset.getHeight }) }}</span>
 
 	{% else %}
 

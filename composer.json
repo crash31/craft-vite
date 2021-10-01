@@ -1,10 +1,10 @@
 {
   "require": {
-    "craftcms/cms": "3.7.13",
+    "craftcms/cms": "3.7.14",
     "craftcms/redactor": "2.8.8",
     "craftsnippets/craft-image-toolbox": "1.1.1",
     "mmikkel/cp-field-inspect": "1.2.5",
-    "nystudio107/craft-seomatic": "3.4.10",
+    "nystudio107/craft-seomatic": "3.4.15",
     "nystudio107/craft-vite": "1.0.16",
     "sebastianlenz/linkfield": "1.0.25",
     "spicyweb/craft-embedded-assets": "2.8.0",
