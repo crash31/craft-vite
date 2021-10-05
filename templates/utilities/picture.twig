@@ -42,35 +42,58 @@
 		<picture>
 			{% if craft.app.images.supportsWebP %}
 
-				<source type="image/webp" data-srcset="{{ asset.getUrl(imgInfoWebP) }}" media="1x">
+				{% if sizes|length > 0 %}
+					{# <source type="image/webp" data-srcset="{{ asset.getUrl(imgInfoWebP) }}" media="1x"> #}
+					{% do asset.setTransform(imgInfoWebP) %}
 
-			{% endif %}
+					{% set srcsetArr = asset.getSrcset(sizes)|split(', ') %}
 
-			{% if sizes|length > 0 %}
+					{% set sizeIndex = 0 %}
+					{% for srcset in srcsetArr %}
+						{% set srcset = srcset|replace(' ' ~ sizes[sizeIndex], '') %}
+						<source type="image/webp" data-srcset="{{ srcset }}" media="{{ sizes[sizeIndex] }}">
+						{% set sizeIndex = sizeIndex + 1 %}
+					{% endfor %}
 
-				{% do asset.setTransform(imgInfo) %}
+					{# Use srcset #}
+					<img {% if id|length %} id="{{ id }}" {% endif %} data-src="{{ asset.getUrl(imgInfoWebP) }}" width="{{ asset.getWidth(imgInfoWebP) }}" height="{{ asset.getHeight(imgInfoWebP) }}" alt="{{ alt }}" class="{{ class }}" loading="lazy"/>
+				{% else %}
+					<source
+					type="image/webp" data-srcset="{{ asset.getUrl(imgInfoWebP) }}" media="1x">
 
-				{% set srcsetArr = asset.getSrcset(sizes)|split(', ') %}
-
-				{% set sizeIndex = 0 %}
-				{% for srcset in srcsetArr %}
-					{% set srcset = srcset|replace(' ' ~ sizes[sizeIndex], '') %}
-					<source type="image/{{ asset.extension }}" data-srcset="{{ srcset }}" media="{{ sizes[sizeIndex] }}">
-					{% set sizeIndex = sizeIndex + 1 %}
-				{% endfor %}
-
-				{# Use srcset #}
-				<img {% if id|length %} id="{{ id }}" {% endif %} data-src="{{ asset.getUrl(imgInfo) }}" width="{{ asset.getWidth(imgInfo) }}" height="{{ asset.getHeight(imgInfo) }}" alt="{{ alt }}" class="{{ class }}" loading="lazy"/>
+					{# Use Standard img element #}
+					<img {% if id|length %} id="{{ id }}" {% endif %} data-src="{{ asset.getUrl(imgInfoWebP) }}" width="{{ asset.getWidth(imgInfoWebP) }}" height="{{ asset.getHeight(imgInfoWebP) }}" alt="{{ alt }}" class="{{ class }}" loading="lazy"/>
+				{% endif %}
 
 			{% else %}
 
-				<source
-				type="image/{{ asset.extension }}" data-srcset="{{ asset.getUrl(imgInfo) }}" media="1x">
+				{% if sizes|length > 0 %}
 
-				{# Use Standard img element #}
-				<img {% if id|length %} id="{{ id }}" {% endif %} data-src="{{ asset.getUrl(imgInfo) }}" width="{{ asset.getWidth(imgInfo) }}" height="{{ asset.getHeight(imgInfo) }}" alt="{{ alt }}" class="{{ class }}" loading="lazy"/>
+					{% do asset.setTransform(imgInfo) %}
 
+					{% set srcsetArr = asset.getSrcset(sizes)|split(', ') %}
+
+					{% set sizeIndex = 0 %}
+					{% for srcset in srcsetArr %}
+						{% set srcset = srcset|replace(' ' ~ sizes[sizeIndex], '') %}
+						<source type="image/{{ asset.extension }}" data-srcset="{{ srcset }}" media="{{ sizes[sizeIndex] }}">
+						{% set sizeIndex = sizeIndex + 1 %}
+					{% endfor %}
+
+					{# Use srcset #}
+					<img {% if id|length %} id="{{ id }}" {% endif %} data-src="{{ asset.getUrl(imgInfo) }}" width="{{ asset.getWidth(imgInfo) }}" height="{{ asset.getHeight(imgInfo) }}" alt="{{ alt }}" class="{{ class }}" loading="lazy"/>
+
+				{% else %}
+
+					<source
+					type="image/{{ asset.extension }}" data-srcset="{{ asset.getUrl(imgInfo) }}" media="1x">
+
+					{# Use Standard img element #}
+					<img {% if id|length %} id="{{ id }}" {% endif %} data-src="{{ asset.getUrl(imgInfo) }}" width="{{ asset.getWidth(imgInfo) }}" height="{{ asset.getHeight(imgInfo) }}" alt="{{ alt }}" class="{{ class }}" loading="lazy"/>
+
+				{% endif %}
 			{% endif %}
+
 
 		</picture>
 
