@@ -1,6 +1,6 @@
 {
   "require": {
-    "craftcms/cms": "3.7.14",
+    "craftcms/cms": "3.7.15",
     "craftcms/redactor": "2.8.8",
     "craftsnippets/craft-image-toolbox": "1.1.1",
     "mmikkel/cp-field-inspect": "1.2.5",
