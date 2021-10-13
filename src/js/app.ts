@@ -10,7 +10,7 @@ import SkeletonLoading from '../vue/SkeletonLoading.vue';
 
 Turbo.start();
 
-const main = async() => {
+const main = async () => {
   // Create vue instances
   const app = createApp({
     name: 'App',
@@ -31,12 +31,16 @@ const main = async() => {
       const app = document.getElementById('app')
       // console.log('beforeMount');
       if (app.parentNode) {
-        document.addEventListener('turbo:visit', () => this.$.appContext.app.unmount(), { once: true});
+        document.addEventListener('turbo:visit', () => this.$.appContext.app.unmount(), { once: true });
         this.$originalEl = app.outerHTML;
       }
     },
     mounted() {
       const app = document.getElementById('app')
+      // Correct for history issue
+      if (app.children.length === 0) {
+        Turbo.visit(window.location.href);
+      }
       gsap.fromTo(app, { opacity: 0 }, { opacity: 1, duration: 0.2, ease: 'power2.out' });
     },
     destroyed() {
@@ -54,7 +58,7 @@ const main = async() => {
 
 document.addEventListener('turbo:load', () => {
   // Execute async function
-  main().then( (value) => {
+  main().then((value) => {
     window.onload = () => {
       if (app) { app.style.opacity = '1.0' }
     }
