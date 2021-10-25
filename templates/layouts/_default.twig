@@ -23,17 +23,19 @@
 			{% endblock %}
 		</div>
 
+		{# parse-ignore-start #}
 		<script>
 			// Fall back for long page load
-function fallBack() {
-setTimeout(function () {
-var app = document.getElementById('app');
-if (app) {
-app.style.opacity = '1.0';
-}
-}, 2500);
-}
-fallBack();
+			function fallBack() {
+				setTimeout(function () {
+					var app = document.getElementById('app');
+					if (app) {
+						app.style.opacity = '1.0';
+					}
+				}, 2500);
+			}
+			fallBack();
 		</script>
+		{# parse-ignore-endd #}
 	</body>
 </html>
