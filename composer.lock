@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3ece1f13570da6306f8909934a5a104d",
+    "content-hash": "c52e78ff27d18ae0b1ffe16a33ef6bf8",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -198,11 +198,11 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.11",
+            "version": "1.3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/0b072d51c5a9c6f3412f7ea3ab043d6603cb2582",
-                "reference": "0b072d51c5a9c6f3412f7ea3ab043d6603cb2582",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/4c679186f2aca4ab6a0f1b0b9cf9252decb44d0b",
+                "reference": "4c679186f2aca4ab6a0f1b0b9cf9252decb44d0b",
                 "shasum": ""
             },
             "require": {
@@ -239,7 +239,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2021-09-25T20:32:43+00:00"
+            "time": "2021-10-28T20:44:15+00:00"
         },
         {
             "name": "composer/composer",
@@ -352,11 +352,11 @@
         },
         {
             "name": "composer/semver",
-            "version": "3.2.5",
+            "version": "3.2.6",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/31f3ea725711245195f62e54ffa402d8ef2fdba9",
-                "reference": "31f3ea725711245195f62e54ffa402d8ef2fdba9",
+                "url": "https://api.github.com/repos/composer/semver/zipball/83e511e247de329283478496f7a1e114c9517506",
+                "reference": "83e511e247de329283478496f7a1e114c9517506",
                 "shasum": ""
             },
             "require": {
@@ -400,7 +400,7 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2021-05-24T12:41:47+00:00"
+            "time": "2021-10-25T11:34:17+00:00"
         },
         {
             "name": "composer/spdx-licenses",
@@ -490,11 +490,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.17.2",
+            "version": "3.7.19",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/254d8fe213b7149b077236666c17e13e1776bb90",
-                "reference": "254d8fe213b7149b077236666c17e13e1776bb90",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/725a691253c43e3d2442bcf78fee5465cd791f7a",
+                "reference": "725a691253c43e3d2442bcf78fee5465cd791f7a",
                 "shasum": ""
             },
             "require": {
@@ -578,7 +578,7 @@
                 "docs": "https://craftcms.com/docs/3.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2021-10-21T21:19:38+00:00"
+            "time": "2021-11-02T16:02:52+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2941,11 +2941,11 @@
         },
         {
             "name": "spicyweb/craft-embedded-assets",
-            "version": "2.8.1",
+            "version": "2.9.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spicywebau/craft-embedded-assets/zipball/09e4709af6cad843cc68bb16c252adebababfbc6",
-                "reference": "09e4709af6cad843cc68bb16c252adebababfbc6",
+                "url": "https://api.github.com/repos/spicywebau/craft-embedded-assets/zipball/5273a33ebdd202a51944ea4cf7f77e376556a09b",
+                "reference": "5273a33ebdd202a51944ea4cf7f77e376556a09b",
                 "shasum": ""
             },
             "require": {
@@ -2990,10 +2990,10 @@
             "support": {
                 "issues": "https://github.com/spicywebau/craft-embedded-assets/issues",
                 "source": "https://github.com/spicywebau/craft-embedded-assets",
-                "docs": "https://github.com/spicywebau/craft-embedded-assets/blob/2.8.1/README.md",
+                "docs": "https://github.com/spicywebau/craft-embedded-assets/blob/2.9.0/README.md",
                 "rss": "https://github.com/spicywebau/craft-embedded-assets/commits/master.atom"
             },
-            "time": "2021-10-08T12:28:19+00:00"
+            "time": "2021-11-03T03:24:45+00:00"
         },
         {
             "name": "spicyweb/craft-neo",
@@ -3142,11 +3142,11 @@
         },
         {
             "name": "symfony/console",
-            "version": "v5.3.7",
+            "version": "v5.3.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/8b1008344647462ae6ec57559da166c2bfa5e16a",
-                "reference": "8b1008344647462ae6ec57559da166c2bfa5e16a",
+                "url": "https://api.github.com/repos/symfony/console/zipball/d4e409d9fbcfbf71af0e5a940abb7b0b4bad0bd3",
+                "reference": "d4e409d9fbcfbf71af0e5a940abb7b0b4bad0bd3",
                 "shasum": ""
             },
             "require": {
@@ -3205,7 +3205,7 @@
                 "console",
                 "terminal"
             ],
-            "time": "2021-08-25T20:02:16+00:00"
+            "time": "2021-10-26T09:30:15+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -3949,11 +3949,11 @@
         },
         {
             "name": "symfony/string",
-            "version": "v5.3.7",
+            "version": "v5.3.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/8d224396e28d30f81969f083a58763b8b9ceb0a5",
-                "reference": "8d224396e28d30f81969f083a58763b8b9ceb0a5",
+                "url": "https://api.github.com/repos/symfony/string/zipball/d70c35bb20bbca71fc4ab7921e3c6bda1a82a60c",
+                "reference": "d70c35bb20bbca71fc4ab7921e3c6bda1a82a60c",
                 "shasum": ""
             },
             "require": {
@@ -3999,7 +3999,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2021-08-26T08:00:08+00:00"
+            "time": "2021-10-27T18:21:46+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -5398,5 +5398,5 @@
     "platform-overrides": {
         "php": "7.2.5"
     },
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
