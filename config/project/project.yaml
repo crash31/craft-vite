@@ -1,4 +1,4 @@
-dateModified: 1632429926
+dateModified: 1638545059
 email:
   fromEmail: developer@gotobig.com
   fromName: 'Vite Test'
@@ -10,6 +10,7 @@ meta:
     5e0f8bf0-e013-4ad2-9679-e34c5a64d762: Builder # Builder
     8d99434e-ca23-4a1d-ab99-a84fe4dbece6: Span # Span
     10fb4a91-ae7e-4e7f-bd1e-c7f8462993fe: Sections # Sections
+    479e8b76-c24c-437d-a3fe-0d3e07601989: 'Public Schema' # Public Schema
     500a0c8c-e70f-4669-aae7-43726fc10153: Overlap # Overlap
     663abdd9-fd46-4848-a217-272ab483ff55: Headline # Headline
     1159ef0b-1522-4f29-81cf-6f5ad147092b: 'Image List' # Image List
